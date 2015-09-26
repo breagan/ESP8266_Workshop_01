@@ -1,5 +1,6 @@
 wifi.setmode(wifi.STATION)
-wifi.sta.config("ESP8266_PI","password")
+wifi.sta.config("ESP8266_Workshop","password")
+wifi.sta.connect()
   print("System Info:  ")
   print(wifi.sta.getip())
      majorVer, minorVer, devVer, chipid, flashid, flashsize, flashmode, flashspeed = node.info();
